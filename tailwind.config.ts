@@ -64,11 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				genezio: {
-					lavender: '#CDB4DB',
+					lavender: '#50404d',
 					white: '#FFFFFF',
 					light: '#F0E6F5',
 					dark: '#2D2438',
-					accent: '#9E7EB9'
+					accent: '#6b575e'
 				}
 			},
 			borderRadius: {
@@ -115,9 +115,10 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out forwards'
 			},
 			boxShadow: {
-				'genezio': '0 4px 14px 0 rgba(205, 180, 219, 0.25)',
+				'genezio': '0 4px 14px 0 rgba(80, 64, 77, 0.25)',
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
