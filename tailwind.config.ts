@@ -64,17 +64,17 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				genezio: {
-					primary: '#6b575e',
-					complementary: '#577c6b',
-					dustyRose: '#9c7f82',
-					mutedMauve: '#8f7d7f',
-					beige: '#d1b28d',
-					lavender: '#a28ebd',
-					lightGray: '#d1d1d1',
-					charcoalGray: '#4c4c4c',
+					primary: '#CDB4DB',
+					complementary: '#B4DBCD',
+					dustyRose: '#F5C8C8',
+					mutedMauve: '#E8C8F5',
+					beige: '#F5E8C8',
+					lavender: '#CDB4DB',
+					lightGray: '#F0F0F0',
+					charcoalGray: '#333333',
 					white: '#FFFFFF',
 					light: '#F0E6F5',
-					dark: '#2D2438'
+					dark: '#5D4777'
 				}
 			},
 			borderRadius: {
@@ -121,8 +121,8 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out forwards'
 			},
 			boxShadow: {
-				'genezio': '0 4px 14px 0 rgba(107, 87, 94, 0.25)',
-				'complementary': '0 4px 14px 0 rgba(87, 124, 107, 0.25)',
+				'genezio': '0 4px 14px 0 rgba(205, 180, 219, 0.25)',
+				'complementary': '0 4px 14px 0 rgba(180, 219, 205, 0.25)',
 			}
 		}
 	},
