@@ -27,7 +27,7 @@ export const Header: React.FC = () => {
             <Link to="/" className="flex items-center">
               <span className="text-3xl mr-2">🎓</span>
               <div>
-                <h1 className="text-xl md:text-2xl font-merriweather font-bold text-genezio-dark">
+                <h1 className="text-xl md:text-2xl font-merriweather font-bold text-genezio-charcoalGray">
                   Genezio University
                 </h1>
               </div>
@@ -40,8 +40,8 @@ export const Header: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`font-medium transition-colors hover:text-genezio-accent ${
-                  isActive(link.path) ? 'text-genezio-lavender border-b-2 border-genezio-lavender' : 'text-genezio-dark'
+                className={`font-medium transition-colors hover:text-genezio-complementary ${
+                  isActive(link.path) ? 'text-genezio-primary border-b-2 border-genezio-primary' : 'text-genezio-charcoalGray'
                 }`}
               >
                 {link.name}
@@ -52,7 +52,7 @@ export const Header: React.FC = () => {
           
           {/* Mobile Navigation Button */}
           <button 
-            className="md:hidden text-genezio-dark"
+            className="md:hidden text-genezio-charcoalGray"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -81,8 +81,8 @@ export const Header: React.FC = () => {
                   to={link.path}
                   className={`font-medium p-2 rounded-md ${
                     isActive(link.path) 
-                      ? 'bg-genezio-light text-genezio-accent' 
-                      : 'text-genezio-dark hover:bg-genezio-light'
+                      ? 'bg-genezio-mutedMauve text-white' 
+                      : 'text-genezio-charcoalGray hover:bg-genezio-dustyRose hover:text-white'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

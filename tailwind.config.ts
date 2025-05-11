@@ -64,11 +64,17 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				genezio: {
-					lavender: '#50404d',
+					primary: '#6b575e',
+					complementary: '#577c6b',
+					dustyRose: '#9c7f82',
+					mutedMauve: '#8f7d7f',
+					beige: '#d1b28d',
+					lavender: '#a28ebd',
+					lightGray: '#d1d1d1',
+					charcoalGray: '#4c4c4c',
 					white: '#FFFFFF',
 					light: '#F0E6F5',
-					dark: '#2D2438',
-					accent: '#6b575e'
+					dark: '#2D2438'
 				}
 			},
 			borderRadius: {
@@ -115,10 +121,10 @@ export default {
 				'fade-in': 'fade-in 0.5s ease-out forwards'
 			},
 			boxShadow: {
-				'genezio': '0 4px 14px 0 rgba(80, 64, 77, 0.25)',
+				'genezio': '0 4px 14px 0 rgba(107, 87, 94, 0.25)',
+				'complementary': '0 4px 14px 0 rgba(87, 124, 107, 0.25)',
 			}
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
