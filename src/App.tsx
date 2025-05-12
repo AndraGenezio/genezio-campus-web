@@ -11,6 +11,11 @@ import Academics from "./pages/Academics";
 import CampusLife from "./pages/CampusLife";
 import KnowledgeBase from "./pages/KnowledgeBase";
 import NotFound from "./pages/NotFound";
+import InternationalGuide from "./pages/InternationalGuide";
+import FinancialAid from "./pages/FinancialAid";
+import Apply from "./pages/Apply";
+import RequestInfo from "./pages/RequestInfo";
+import CampusTour from "./pages/CampusTour";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +32,11 @@ const App = () => (
             <Route path="/academics" element={<Academics />} />
             <Route path="/campus-life" element={<CampusLife />} />
             <Route path="/knowledge-base" element={<KnowledgeBase />} />
+            <Route path="/international-guide" element={<InternationalGuide />} />
+            <Route path="/financial-aid" element={<FinancialAid />} />
+            <Route path="/apply" element={<Apply />} />
+            <Route path="/request-info" element={<RequestInfo />} />
+            <Route path="/campus-tour" element={<CampusTour />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

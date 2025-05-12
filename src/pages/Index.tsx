@@ -26,11 +26,11 @@ const Index = () => {
             A modern institution preparing students for careers in technology, leadership, and lifelong growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button className="bg-genezio-lavender hover:bg-genezio-accent text-white px-8 py-6 rounded-full text-lg shadow-lg">
-              Apply Now
+            <Button className="bg-genezio-lavender hover:bg-genezio-accent text-white px-8 py-6 rounded-full text-lg shadow-lg" asChild>
+              <Link to="/apply">Apply Now</Link>
             </Button>
-            <Button variant="outline" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-white px-8 py-6 rounded-full text-lg">
-              Request Info
+            <Button variant="outline" className="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border-white px-8 py-6 rounded-full text-lg" asChild>
+              <Link to="/request-info">Request Info</Link>
             </Button>
           </div>
         </div>
@@ -77,7 +77,9 @@ const Index = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Begin Your Journey at Genezio</h2>
           <p className="mb-8 max-w-2xl mx-auto">Join a community dedicated to excellence, innovation, and personal growth.</p>
-          <Button className="btn-primary text-lg px-10 py-6">Schedule a Campus Tour</Button>
+          <Button className="btn-primary text-lg px-10 py-6" asChild>
+            <Link to="/campus-tour">Schedule a Campus Tour</Link>
+          </Button>
         </div>
       </section>
 

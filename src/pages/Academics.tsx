@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
@@ -206,7 +207,9 @@ const Academics = () => {
           <p className="mb-8 max-w-2xl mx-auto">Explore our programs and discover how Genezio University can help you achieve your educational and career goals.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button className="bg-genezio-lavender hover:bg-genezio-accent text-white">Download Program Guide</Button>
-            <Button variant="outline" className="border-white text-white hover:bg-white/10">Schedule an Advising Session</Button>
+            <Button variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+              <Link to="/campus-tour">Schedule a Campus Tour</Link>
+            </Button>
           </div>
         </div>
       </section>

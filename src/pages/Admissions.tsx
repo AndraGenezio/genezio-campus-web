@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
@@ -191,7 +192,9 @@ const Admissions = () => {
               <h3 className="text-xl font-bold mb-4">How to Apply</h3>
               <p className="mb-4">Complete the Financial Aid section of your application to be considered for all available scholarships and grants.</p>
               <p className="mb-4">Submit the FAFSA (for U.S. students) or the International Student Financial Aid Application.</p>
-              <Button className="btn-primary">Financial Aid Resources</Button>
+              <Button className="btn-primary" asChild>
+                <Link to="/financial-aid">Financial Aid Resources</Link>
+              </Button>
             </div>
           </div>
         </div>
@@ -234,7 +237,9 @@ const Admissions = () => {
           </div>
         </div>
         <div className="text-center">
-          <Button className="btn-primary">International Student Guide</Button>
+          <Button className="btn-primary" asChild>
+            <Link to="/international-guide">International Student Guide</Link>
+          </Button>
         </div>
       </section>
 
@@ -244,8 +249,12 @@ const Admissions = () => {
           <h2 className="text-2xl md:text-3xl font-bold mb-6">Ready to Apply?</h2>
           <p className="mb-8 max-w-2xl mx-auto">Take the first step toward your future at Genezio University. Our admissions team is here to support you through the process.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button className="btn-primary">Start Application</Button>
-            <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light">Contact Admissions</Button>
+            <Button className="btn-primary" asChild>
+              <Link to="/apply">Start Application</Link>
+            </Button>
+            <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light" asChild>
+              <Link to="/request-info">Contact Admissions</Link>
+            </Button>
           </div>
         </div>
       </section>
