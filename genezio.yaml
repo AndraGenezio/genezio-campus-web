@@ -1,0 +1,12 @@
+frontend:
+    path: .
+    publish: dist
+    scripts:
+        build:
+            - npm run build
+        deploy:
+            - npm install
+    subdomain: genezio-campus-web
+name: genezio-campus-web
+region: us-east-1
+yamlVersion: 2
