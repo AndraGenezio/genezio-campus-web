@@ -11,8 +11,8 @@ const CampusLife = () => {
       <section className="w-full relative">
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30 z-10"></div>
         <img 
-          src="https://images.pexels.com/photos/1162963/pexels-photo-1162963.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-          alt="Students on campus" 
+          src="https://images.unsplash.com/photo-1584467735871-6d631b588a84?fit=crop&w=1200&q=80" 
+          alt="Students enjoying outdoor campus activities" 
           className="w-full h-[60vh] object-cover"
         />
         <div className="absolute inset-0 z-20 flex flex-col justify-center items-center text-white text-center px-4">

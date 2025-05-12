@@ -47,7 +47,9 @@ export const Header: React.FC = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="btn-primary">Apply Now</Button>
+            <Button className="btn-primary" asChild>
+              <Link to="/apply">Apply Now</Link>
+            </Button>
           </nav>
           
           {/* Mobile Navigation Button */}
@@ -89,7 +91,9 @@ export const Header: React.FC = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button className="btn-primary w-full mt-2">Apply Now</Button>
+              <Button className="btn-primary w-full mt-2" asChild>
+                <Link to="/apply" onClick={() => setIsMenuOpen(false)}>Apply Now</Link>
+              </Button>
             </nav>
           </div>
         )}

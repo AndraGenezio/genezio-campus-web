@@ -6,7 +6,7 @@ export const Chatbot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 left-6 z-50">
       {isOpen && (
         <div className="bg-white rounded-lg shadow-xl w-80 mb-4 overflow-hidden animate-fade-in">
           <div className="bg-genezio-lavender p-4 text-white flex justify-between items-center">
@@ -27,7 +27,7 @@ export const Chatbot: React.FC = () => {
           </div>
           <div className="p-4 h-80 overflow-y-auto bg-gray-50">
             <div className="bg-genezio-light rounded-lg p-3 mb-3 max-w-[80%]">
-              <p className="text-sm">Hi there! I'm GenezioBot, your virtual assistant. How can I help you today?</p>
+              <p className="text-sm">👋 Hi! I'm Genezio Bot — your virtual guide. Ask me about programs, deadlines, student life, or how to apply!</p>
             </div>
           </div>
           <div className="p-3 border-t flex">
@@ -60,9 +60,11 @@ export const Chatbot: React.FC = () => {
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         ) : (
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-          </svg>
+          <img 
+            src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
+            alt="Chatbot icon" 
+            className="w-8 h-8"
+          />
         )}
       </Button>
     </div>

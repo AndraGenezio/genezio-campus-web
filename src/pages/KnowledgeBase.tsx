@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Link } from 'react-router-dom';
 
 const KnowledgeBase = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -14,10 +15,10 @@ const KnowledgeBase = () => {
       <section className="bg-genezio-lavender py-12">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl md:text-5xl font-merriweather font-bold mb-4 text-white">
-            Knowledge Base
+            Genezio University Knowledge Base
           </h1>
           <p className="max-w-2xl mx-auto text-lg mb-8 text-white">
-            Search or browse your way to answers.
+            Explore quick links to essential resources and information.
           </p>
           <div className="max-w-2xl mx-auto relative">
             <Input
@@ -56,7 +57,9 @@ const KnowledgeBase = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="mb-4">Deadlines, Requirements, International Help</p>
-              <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light">Explore</Button>
+              <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light" asChild>
+                <Link to="/admissions">Explore</Link>
+              </Button>
             </CardContent>
           </Card>
           
@@ -67,7 +70,9 @@ const KnowledgeBase = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="mb-4">Course Overviews, Calendars, Requirements</p>
-              <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light">Explore</Button>
+              <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light" asChild>
+                <Link to="/academics">Explore</Link>
+              </Button>
             </CardContent>
           </Card>
           
@@ -78,7 +83,9 @@ const KnowledgeBase = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="mb-4">Scholarships, Application Process, Deadlines</p>
-              <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light">Explore</Button>
+              <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light" asChild>
+                <Link to="/financial-aid">Explore</Link>
+              </Button>
             </CardContent>
           </Card>
           
@@ -89,7 +96,18 @@ const KnowledgeBase = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="mb-4">AI Chat Support Guide, Common Questions</p>
-              <Button variant="outline" className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light">Explore</Button>
+              <Button 
+                variant="outline" 
+                className="border-genezio-lavender text-genezio-dark hover:bg-genezio-light"
+                onClick={() => {
+                  const chatbotElement = document.querySelector('[aria-label="Open chatbot"]');
+                  if (chatbotElement && chatbotElement instanceof HTMLElement) {
+                    chatbotElement.click();
+                  }
+                }}
+              >
+                Ask GenezioBot
+              </Button>
             </CardContent>
           </Card>
         </div>
@@ -193,7 +211,7 @@ const KnowledgeBase = () => {
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="md:w-1/3 flex justify-center">
             <img 
-              src="https://www.svgrepo.com/download/331488/artificial-intelligence-ai.svg" 
+              src="https://cdn-icons-png.flaticon.com/512/8943/8943377.png" 
               alt="AI support icon" 
               className="w-48 h-48"
             />
@@ -206,7 +224,17 @@ const KnowledgeBase = () => {
             <p className="mb-6">
               Simply click the chat icon in the lower-right corner of any page to start a conversation with GenezioBot.
             </p>
-            <Button className="btn-primary">See What GenezioBot Can Do</Button>
+            <Button 
+              className="btn-primary"
+              onClick={() => {
+                const chatbotElement = document.querySelector('[aria-label="Open chatbot"]');
+                if (chatbotElement && chatbotElement instanceof HTMLElement) {
+                  chatbotElement.click();
+                }
+              }}
+            >
+              See What GenezioBot Can Do
+            </Button>
           </div>
         </div>
       </section>
