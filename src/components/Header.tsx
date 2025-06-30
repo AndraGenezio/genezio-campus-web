@@ -21,17 +21,17 @@ export const Header: React.FC = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50 border-b-2 border-blue-600">
+    <header className="bg-white shadow-md sticky top-0 z-50 border-b-2 border-genezio-primary">
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <span className="text-3xl mr-2">🎓</span>
               <div>
-                <h1 className="text-xl md:text-2xl font-merriweather font-bold text-blue-900">
+                <h1 className="text-xl md:text-2xl font-merriweather font-bold text-genezio-charcoalGray">
                   Genezio University
                 </h1>
-                <div className="text-xs text-yellow-600 font-semibold">Excellence • Innovation • Leadership</div>
+                <div className="text-xs text-genezio-primary font-semibold">Excellence • Innovation • Leadership</div>
               </div>
             </Link>
           </div>
@@ -42,21 +42,21 @@ export const Header: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`font-medium transition-colors hover:text-blue-600 ${
-                  isActive(link.path) ? 'text-blue-700 border-b-2 border-blue-600' : 'text-gray-700'
+                className={`font-medium transition-colors hover:text-genezio-primary ${
+                  isActive(link.path) ? 'text-genezio-primary border-b-2 border-genezio-primary' : 'text-gray-700'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white border-2 border-yellow-500" asChild>
+            <Button className="btn-primary" asChild>
               <Link to="/apply">Apply Now</Link>
             </Button>
           </nav>
           
           {/* Mobile Navigation Button */}
           <button 
-            className="md:hidden text-blue-900"
+            className="md:hidden text-genezio-charcoalGray"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -85,15 +85,15 @@ export const Header: React.FC = () => {
                   to={link.path}
                   className={`font-medium p-2 rounded-md ${
                     isActive(link.path) 
-                      ? 'bg-blue-100 text-blue-800' 
-                      : 'text-gray-700 hover:bg-blue-50 hover:text-blue-700'
+                      ? 'bg-genezio-light text-genezio-primary' 
+                      : 'text-gray-700 hover:bg-genezio-light hover:text-genezio-primary'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Button className="bg-blue-600 hover:bg-blue-700 text-white w-full mt-2" asChild>
+              <Button className="btn-primary w-full mt-2" asChild>
                 <Link to="/apply" onClick={() => setIsMenuOpen(false)}>Apply Now</Link>
               </Button>
             </nav>
