@@ -38,7 +38,7 @@ const Research = () => {
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">8</div>
-              <div class="text-sm opacity-90">Patents Pending</div>
+              <div className="text-sm opacity-90">Patents Pending</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold mb-2">5</div>
