@@ -10,6 +10,7 @@ import Admissions from "./pages/Admissions";
 import Academics from "./pages/Academics";
 import CampusLife from "./pages/CampusLife";
 import KnowledgeBase from "./pages/KnowledgeBase";
+import Research from "./pages/Research";
 import NotFound from "./pages/NotFound";
 import InternationalGuide from "./pages/InternationalGuide";
 import FinancialAid from "./pages/FinancialAid";
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/academics" element={<Academics />} />
             <Route path="/campus-life" element={<CampusLife />} />
+            <Route path="/research" element={<Research />} />
             <Route path="/knowledge-base" element={<KnowledgeBase />} />
             <Route path="/international-guide" element={<InternationalGuide />} />
             <Route path="/financial-aid" element={<FinancialAid />} />
